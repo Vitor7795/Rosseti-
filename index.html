@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Segura | Loja de camisinhas — projeto de portfólio</title>
+<meta name="description" content="Projeto de portfólio: site de uma loja de camisinhas com animação de frames controlada pelo mouse.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="topo">
+  <p class="marca">Segura</p>
+  <nav aria-label="Principal">
+    <ul>
+      <li><a href="#projeto">Projeto</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#autora">Quem fez</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="conteudo">
+  <section class="palco" aria-labelledby="titulo-hero">
+    <div class="palco-texto">
+      <h1 id="titulo-hero">Proteção com cuidado, entregue com discrição.</h1>
+      <p>Passe o mouse sobre a animação para avançar. No celular ou com o teclado, use o controle abaixo.</p>
+    </div>
+    <div class="cena" id="cena">
+      <canvas id="tela" width="1280" height="720" role="img" aria-label="Animação do produto. Mova o mouse ou o controle para avançar os quadros."></canvas>
+      <p class="aviso" id="aviso" hidden>Coloque os quadros do vídeo na pasta <code>frames</code> para ver a animação.</p>
+    </div>
+    <label class="controle" for="quadro">Avançar animação
+      <input type="range" id="quadro" min="0" max="120" value="0">
+    </label>
+  </section>
+
+  <section id="projeto" class="bloco" aria-labelledby="titulo-projeto">
+    <h2 id="titulo-projeto">Sobre o projeto</h2>
+    <p class="lead">Uma loja online de camisinhas, desenhada para apresentar o processo completo: referência, design system, vídeo gerado por IA e site publicado.</p>
+    <dl class="ficha">
+      <div><dt>Objetivo</dt><dd>Mostrar um site rápido, acessível e bonito, com nota 95 ou mais no WAVE e no Lighthouse.</dd></div>
+      <div><dt>Referência</dt><dd>Modelos encontrados no aura.build e no design system da Asimov.</dd></div>
+      <div><dt>Vídeo</dt><dd>Criado no Google Flow com primeiro e último quadro definidos, depois cortado em quadros.</dd></div>
+      <div><dt>Entrega</dt><dd>Código publicado no GitHub.</dd></div>
+    </dl>
+  </section>
+
+  <section id="produtos" class="bloco claro" aria-labelledby="titulo-produtos">
+    <h2 id="titulo-produtos">Produtos</h2>
+    <ul class="produtos">
+      <li><h3>Clássica</h3><p>Látex, lubrificação suave, ajuste padrão.</p><p class="preco">R$ 12,90 <span>caixa com 3</span></p></li>
+      <li><h3>Ultrafina</h3><p>Mais sensibilidade, mesma segurança.</p><p class="preco">R$ 16,90 <span>caixa com 3</span></p></li>
+      <li><h3>Sem látex</h3><p>Para quem tem alergia ao material.</p><p class="preco">R$ 24,90 <span>caixa com 3</span></p></li>
+    </ul>
+  </section>
+
+  <section id="autora" class="bloco" aria-labelledby="titulo-autora">
+    <h2 id="titulo-autora">Quem fez</h2>
+    <div class="autora">
+      <div class="foto" id="foto-espaco">Espaço para a sua foto</div>
+      <p>Projeto desenvolvido como trabalho de portfólio, usando IA para pesquisa, design e código.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="contato" class="rodape">
+  <h2>Contato</h2>
+  <p><a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+  <p class="mini">Projeto de portfólio. Loja fictícia.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
